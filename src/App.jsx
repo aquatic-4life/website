@@ -41,8 +41,8 @@ export default function AquaticTrainingSpaSite() {
       icon: <Waves className="h-8 w-8" aria-hidden />,
       title: "Swim Lessons",
       blurb:
-        "Private, semi‑private, and group lessons for kids and adults. Water safety, confidence, and technique—at your pace.",
-      bullets: ["All levels", "Infant survival options", "Stroke clinics"],
+        "Private and semi‑private for kids and adults. Water safety, confidence, and technique—at your pace.",
+      bullets: ["All levels", "Early water survival skills", "Stroke clinics"],
       cta: "View lesson options",
       href: "#contact",
     },
@@ -131,7 +131,7 @@ export default function AquaticTrainingSpaSite() {
               <LifeBuoy className="h-5 w-5" aria-hidden />
             </div>
             <div className="font-semibold leading-tight">
-              <div>Aquatic Training & SPA</div>
+              <div>Aquatic 4 Life, Training & SPA LLC</div>
               <div className="text-xs text-gray-500">Swim • CPR • Activities</div>
             </div>
           </a>
@@ -158,7 +158,7 @@ export default function AquaticTrainingSpaSite() {
           <motion.div {...fadeUp}>
             <Badge className="rounded-full px-3 py-1 bg-cyan-600 hover:bg-cyan-600">Safety First, Fun Always</Badge>
             <h1 className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight">
-              Swim lessons, CPR classes, and creative activity books—
+              Swim lessons, CPR classes, and creative coloring and activity books—
               <span className="text-cyan-700"> all in one place.</span>
             </h1>
             <p className="mt-4 text-gray-600 max-w-prose">
@@ -169,9 +169,9 @@ export default function AquaticTrainingSpaSite() {
               <a href="#contact"><Button variant="outline" className="rounded-2xl">Get Started</Button></a>
             </div>
             <div className="mt-6 flex items-center gap-3 text-sm text-gray-600">
-              <CheckCircle2 className="h-4 w-4" /> Certified Instructors
-              <CheckCircle2 className="h-4 w-4" /> Warm‑water pools
-              <CheckCircle2 className="h-4 w-4" /> Family‑friendly scheduling
+              <CheckCircle2 className="h-4 w-4" /> Certified Instructor
+              <CheckCircle2 className="h-4 w-4" /> On-Site swim lessons - We come to you!
+              <CheckCircle2 className="h-4 w-4" /> Flexible scheduling
             </div>
           </motion.div>
           <motion.div {...fadeUp} className="md:justify-self-end">
@@ -179,7 +179,7 @@ export default function AquaticTrainingSpaSite() {
               <div className="absolute -inset-4 -z-10 rounded-3xl bg-cyan-100/50 blur-xl" />
               <Card className="rounded-3xl shadow-xl">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><Waves className="h-5 w-5"/> Next Available Sessions</CardTitle>
+                  <CardTitle className="flex items-center gap-2"><Waves className="h-5 w-5"/> Book Summer 2026 Sessions</CardTitle>
                   <CardDescription>Quick picks to jump right in</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -458,9 +458,9 @@ export default function AquaticTrainingSpaSite() {
               Tell us what you need—lessons, CPR certification, or book orders—and we’ll reply with availability and next steps.
             </p>
             <div className="mt-6 space-y-3 text-gray-700">
-              <p className="flex items-center gap-2"><Phone className="h-4 w-4"/> (555) 123‑4567</p>
-              <p className="flex items-center gap-2"><Mail className="h-4 w-4"/> hello@aquatictrainingspa.com</p>
-              <p className="flex items-center gap-2"><MapPin className="h-4 w-4"/> Your City, USA</p>
+              <p className="flex items-center gap-2"><Phone className="h-4 w-4"/> (818) 477-4212</p>
+              <p className="flex items-center gap-2"><Mail className="h-4 w-4"/> lparks@aquatic4life.com</p>
+              <p className="flex items-center gap-2"><MapPin className="h-4 w-4"/> Chicago, IL</p>
             </div>
           </div>
           <Card className="rounded-3xl">
@@ -518,7 +518,7 @@ export default function AquaticTrainingSpaSite() {
       <footer className="border-t">
         <div className="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-6 text-sm">
           <div>
-            <div className="font-semibold">Aquatic Training & SPA</div>
+            <div className="font-semibold">Aquatic 4 Life, Training & SPA LLC</div>
             <p className="mt-2 text-gray-600 max-w-sm">
               Building confident swimmers and safer communities.
             </p>
