@@ -102,7 +102,7 @@ export default function AquaticTrainingSpaSite() {
           <p className="flex items-center gap-3"><Mail className="h-5 w-5" style={{ color: BLUE }} /><a href="mailto:lparks@aquatic4life.com" className="underline">lparks@aquatic4life.com</a></p>
           <p className="flex items-center gap-3"><Phone className="h-5 w-5" style={{ color: BLUE }} /><a href="tel:+18184774212" className="underline">(818) 477-4212</a></p>
           <p className="flex items-center gap-3"><MapPin className="h-5 w-5" style={{ color: BLUE }} />Class locations provided with confirmed schedules</p>
-        </div><p className="mt-5 text-sm text-gray-600">Please confirm contact information before publishing. The previous contact form was a nonfunctional demo and has been removed.</p></div></section>
+        </div></div></section>
       </main>
       <footer className="border-t py-9"><div className="container mx-auto px-4 text-sm text-gray-600"><p className="font-semibold text-gray-900">Aquatic 4 Life, Training & SPA LLC</p><p className="mt-2">Real Skills. Real Confidence. Real Life.</p><p className="mt-4">© {new Date().getFullYear()} Aquatic 4 Life, Training & SPA LLC</p></div></footer>
     </div>
