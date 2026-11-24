@@ -25,7 +25,7 @@ const fadeUp = { initial: { opacity: 0, y: 18 }, animate: { opacity: 1, y: 0 }, 
 
 export default function AquaticTrainingSpaSite() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900 [&_a:focus-visible]:outline-[#01A5E2] [&_button:focus-visible]:ring-[#01A5E2]">
       <header className="sticky top-0 z-40 border-b bg-white/95 backdrop-blur">
         <div className="container mx-auto flex items-center justify-between gap-4 px-4 py-3">
           <a href="#home" className="flex items-center gap-3" aria-label="Aquatic 4 Life home">
@@ -45,18 +45,20 @@ export default function AquaticTrainingSpaSite() {
       </header>
 
       <main>
-        <section id="home" className="bg-gradient-to-b from-sky-50 to-white">
+        <section id="home" className="bg-gradient-to-b from-[#F0FAFD] to-white">
           <div className="container mx-auto grid items-center gap-10 px-4 py-14 md:grid-cols-2 md:py-20">
             <motion.div {...fadeUp}>
-              <p className="inline-block rounded-full px-4 py-2 text-sm font-semibold text-white" style={{ backgroundColor: "#007DA8" }}>Training our way through life.</p>
-              <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">Swim lessons, CPR classes, and creative coloring and activity books—<span style={{ color: "#007DA8" }}>all in one place.</span></h1>
+              <p className="text-sm font-bold uppercase tracking-widest" style={{ color: BLUE }}>Aquatic 4 Life</p>
+              <h1 className="mt-4 text-[40px] font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-[60px]" style={{ color: "#000000" }}><span style={{ color: ORANGE }}>Training</span> our way<br/><span style={{ color: BLUE }}>through life.</span></h1>
+              <p className="mt-5 text-xl font-semibold text-black md:text-2xl">Swim lessons, CPR classes, and creative coloring and activity books—all in one place.</p>
               <p className="mt-5 max-w-xl text-lg text-gray-700">We help families feel confident in and around water. Learn essential life-saving skills and keep the fun going at home with our swim-themed coloring &amp; activity books.</p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <Button asChild style={{ backgroundColor: ORANGE }} className="rounded-xl text-white"><a href="#services">Explore Services</a></Button>
-                <Button asChild variant="outline" className="rounded-xl"><a href="#contact">Get Started</a></Button>
+                <Button asChild style={{ backgroundColor: ORANGE }} className="rounded-xl text-white"><a href="#pricing">Explore CPR Classes</a></Button>
+                <Button asChild variant="outline" className="rounded-xl"><a href="#services">Explore Our Services</a></Button>
               </div>
             </motion.div>
-            <motion.div {...fadeUp} className="flex justify-center md:justify-end">
+            <motion.div {...fadeUp} className="flex flex-col items-center gap-4 md:items-end">
+              <img src="/coach-tashee-hand.png" alt="Coach Tashee welcoming visitors" className="mx-auto w-full max-w-[340px] object-contain" />
               <Card className="w-full max-w-lg rounded-3xl shadow-lg">
                 <CardHeader><CardTitle className="flex items-center gap-2"><HeartPulse className="h-6 w-6" style={{ color: BLUE }} />Upcoming CPR Classes</CardTitle><CardDescription>American Red Cross Child CPR/AED with Latasha Parks</CardDescription></CardHeader>
                 <CardContent>
@@ -89,24 +91,24 @@ export default function AquaticTrainingSpaSite() {
           <p className="mx-auto mt-5 max-w-3xl text-center text-xs text-gray-500">Remaining balances are due seven days before class. Minimum 5 and maximum 10 participants per class. Registration and cancellation policies apply.</p>
         </section>
 
-        <section id="about" className="bg-sky-50 py-16">
+        <section id="about" className="bg-[#F0FAFD] py-16">
           <div className="container mx-auto grid items-center gap-8 px-4 md:grid-cols-2">
             <div className="flex justify-center"><img src="/coach-tashee.png" alt="Coach Tashee illustration" className="max-h-80 w-full max-w-sm object-contain" /></div>
-            <div><h2 className="text-3xl font-bold">About Coach Tashee</h2><p className="mt-3 font-semibold">Meet LaTasha Parks — Founder &amp; Owner of Aquatic 4 Life</p><p className="mt-4 text-gray-700">For Coach Tashee, swimming is more than a skill. It's a lifelong passion with a purpose.</p><p className="mt-3 text-gray-700">Introduced to swimming at an early age through the National Youth Sports Program, LaTasha developed a love for the water that led her to competitive swimming in high school and, in 1999, to serving as a lifeguard with the very program that helped shape her journey.</p><p className="mt-3 text-gray-700">Having experienced the devastating impact of drowning within her community, she developed a deep commitment to teaching others how to swim and helping families understand the importance of water safety.</p><p className="mt-3 text-gray-700">Through Aquatic 4 Life, Coach Tashee is dedicated to building confidence, teaching essential life-saving skills, and empowering individuals and families to be safer in and around water.</p><p className="mt-4 font-semibold" style={{ color: "#007DA8" }}>Training our way through life.</p></div>
+            <div><h2 className="text-3xl font-bold">About Coach Tashee</h2><p className="mt-3 font-semibold">Meet LaTasha Parks — Founder &amp; Owner of Aquatic 4 Life</p><p className="mt-4 text-gray-700">For Coach Tashee, swimming is more than a skill. It's a lifelong passion with a purpose.</p><p className="mt-3 text-gray-700">Introduced to swimming at an early age through the National Youth Sports Program, LaTasha developed a love for the water that led her to competitive swimming in high school and, in 1999, to serving as a lifeguard with the very program that helped shape her journey.</p><p className="mt-3 text-gray-700">Having experienced the devastating impact of drowning within her community, she developed a deep commitment to teaching others how to swim and helping families understand the importance of water safety.</p><p className="mt-3 text-gray-700">Through Aquatic 4 Life, Coach Tashee is dedicated to building confidence, teaching essential life-saving skills, and empowering individuals and families to be safer in and around water.</p><p className="mt-4 font-semibold" style={{ color: "#01A5E2" }}>Training our way through life.</p></div>
           </div>
         </section>
 
         <section id="services" className="container mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold md:text-4xl">What We Offer</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">{services.map((service) => { const Icon = service.icon; return (
-            <Card key={service.title} className="flex h-full flex-col rounded-3xl"><CardHeader><div className="grid h-12 w-12 place-items-center rounded-2xl bg-sky-50"><Icon className="h-8 w-8" style={{ color: BLUE }} /></div><CardTitle className="mt-3">{service.title}</CardTitle><CardDescription>{service.description}</CardDescription></CardHeader><CardContent className="flex flex-1 flex-col"><ul className="space-y-3 text-sm text-gray-700">{service.features.map(feature => <li key={feature} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: BLUE }} />{feature}</li>)}</ul><div className="mt-auto pt-6"><Button asChild variant="outline" className="rounded-xl"><a href={service.link}>{service.action}<ArrowRight className="ml-2 h-4 w-4" /></a></Button></div></CardContent></Card>
+            <Card key={service.title} className="flex h-full flex-col rounded-3xl"><CardHeader><div className="grid h-12 w-12 place-items-center rounded-2xl bg-[#F0FAFD]"><Icon className="h-8 w-8" style={{ color: BLUE }} /></div><CardTitle className="mt-3">{service.title}</CardTitle><CardDescription>{service.description}</CardDescription></CardHeader><CardContent className="flex flex-1 flex-col"><ul className="space-y-3 text-sm text-gray-700">{service.features.map(feature => <li key={feature} className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" style={{ color: BLUE }} />{feature}</li>)}</ul><div className="mt-auto pt-6"><Button asChild variant="outline" className="rounded-xl"><a href={service.link}>{service.action}<ArrowRight className="ml-2 h-4 w-4" /></a></Button></div></CardContent></Card>
           ); })}</div>
         </section>
 
-        <section id="swim" className="border-t bg-sky-50 py-16">
+        <section id="swim" className="border-t bg-[#F0FAFD] py-16">
           <div className="container mx-auto grid items-center gap-8 px-4 md:grid-cols-2">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wide" style={{ color: "#007DA8" }}>Summer 2027</p>
+              <p className="text-sm font-semibold uppercase tracking-wide" style={{ color: "#01A5E2" }}>Summer 2027</p>
               <h2 className="mt-3 text-3xl font-bold md:text-4xl">Learn to Swim with Confidence.</h2>
               <p className="mt-4 text-gray-700">Aquatic 4 Life offers personalized, seasonal mobile private swim lessons for children and adults, tailored to individual skill levels and swimming goals.</p>
               <h3 className="mt-6 text-xl font-semibold">Personalized Lessons. Personalized Pricing.</h3>
@@ -125,11 +127,24 @@ export default function AquaticTrainingSpaSite() {
         </section>
 
         {/* Swimmer testimonial */}
-        <section id="testimonials" className="container mx-auto px-4 py-16"><h2 className="text-3xl font-bold">What Our Swimmers Say</h2><Card className="mt-6 max-w-3xl rounded-3xl"><CardContent className="pt-6"><blockquote className="text-xl text-gray-700">“Ms. Latasha I just love swim lessons, I just want to stay in the pool foreverrrr!!”</blockquote><p className="mt-4 text-sm text-gray-500">— Aquatic 4 Life young swimmer</p></CardContent></Card></section>
+        <section id="testimonials" className="py-16" style={{ backgroundColor: BLUE }}>
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-sm font-semibold uppercase tracking-widest text-black">Little Swimmers. Big Impact.</p>
+            <h2 className="mt-3 text-3xl font-extrabold text-black md:text-4xl">What Our Swimmers Say</h2>
+            <Card className="mx-auto mt-8 max-w-3xl rounded-3xl bg-white shadow-lg">
+              <CardContent className="px-6 py-8 md:px-12 md:py-10">
+                <div aria-hidden="true" className="text-7xl font-extrabold leading-none" style={{ color: ORANGE }}>“</div>
+                <blockquote className="text-xl font-medium italic leading-relaxed text-black md:text-2xl">“Ms. Latasha I just love swim lessons, I just want to stay in the pool foreverrrr!!”</blockquote>
+                <div className="mx-auto mt-6 h-1 w-12 rounded-full" style={{ backgroundColor: ORANGE }} />
+                <p className="mt-4 text-sm text-gray-600">— Aquatic 4 Life young swimmer</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
 
         <section id="faq" className="bg-gray-50 py-16"><div className="container mx-auto px-4"><h2 className="text-3xl font-bold md:text-4xl">FAQ</h2><div className="mt-7 grid gap-6 md:grid-cols-2">{faqs.map(item => <Card key={item.q} className="rounded-3xl"><CardHeader><CardTitle className="text-lg">{item.q}</CardTitle></CardHeader><CardContent className="text-gray-700">{item.a}</CardContent></Card>)}</div></div></section>
 
-        <section id="contact" className="bg-sky-50 py-16"><div className="container mx-auto px-4"><h2 className="text-3xl font-bold">Get in Touch</h2><p className="mt-3 max-w-xl text-gray-700">Questions about CPR training, swim lessons, or upcoming activity books? Contact Aquatic 4 Life directly.</p><div className="mt-6 space-y-3 text-gray-800">
+        <section id="contact" className="bg-[#F0FAFD] py-16"><div className="container mx-auto px-4"><h2 className="text-3xl font-bold">Get in Touch</h2><p className="mt-3 max-w-xl text-gray-700">Questions about CPR training, swim lessons, or upcoming activity books? Contact Aquatic 4 Life directly.</p><div className="mt-6 space-y-3 text-gray-800">
           <p className="flex items-center gap-3"><Mail className="h-5 w-5" style={{ color: BLUE }} /><a href="mailto:lparks@aquatic4life.com" className="underline">lparks@aquatic4life.com</a></p>
           <p className="flex items-center gap-3"><Phone className="h-5 w-5" style={{ color: BLUE }} /><a href="tel:+18184774212" className="underline">(818) 477-4212</a></p>
           <p className="flex items-center gap-3"><MapPin className="h-5 w-5" style={{ color: BLUE }} />Class locations provided with confirmed schedules</p>
