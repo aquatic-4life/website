@@ -33,7 +33,7 @@ export default function AquaticTrainingSpaSite() {
           </a>
           <nav className="hidden items-center gap-4 text-sm lg:flex" aria-label="Main navigation">
             <a href="#pricing" className="hover:underline">CPR Classes</a>
-            <a href="#about" className="hover:underline">Coach Tashee</a>
+            <a href="#about" className="hover:underline">Coach Tasha</a>
             <a href="#services" className="hover:underline">Services</a>
             <a href="#swim" className="hover:underline">Swim Lessons</a>
             <a href="#books" className="hover:underline">Books</a>
@@ -58,7 +58,7 @@ export default function AquaticTrainingSpaSite() {
               </div>
             </motion.div>
             <motion.div {...fadeUp} className="flex flex-col items-center gap-4 md:items-end">
-              <img src="/coach-tashee-hand.png" alt="Coach Tashee welcoming visitors" className="mx-auto w-full max-w-[340px] object-contain" />
+              <img src="/coach-tashee-hand.png" alt="Coach Tasha welcoming visitors" className="mx-auto w-full max-w-[340px] object-contain" />
               <Card className="w-full max-w-lg rounded-3xl shadow-lg">
                 <CardHeader><CardTitle className="flex items-center gap-2"><HeartPulse className="h-6 w-6" style={{ color: BLUE }} />Upcoming CPR Classes</CardTitle><CardDescription>American Red Cross Child CPR/AED with Latasha Parks</CardDescription></CardHeader>
                 <CardContent>
@@ -72,8 +72,8 @@ export default function AquaticTrainingSpaSite() {
 
         <section id="pricing" className="container mx-auto px-4 py-16">
           <h2 className="text-center text-3xl font-bold md:text-4xl">Choose Your Child CPR/AED Training Option</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-center text-gray-600">Be prepared when it matters most. Both options include hands-on instruction with Coach Tashee and a light breakfast.</p>
-          <div className="mx-auto mt-8 flex justify-center"><img src="/coach-tashee-cpr.png" alt="Coach Tashee with a CPR training manikin" className="max-h-64 w-full max-w-sm object-contain" /></div>
+          <p className="mx-auto mt-3 max-w-2xl text-center text-gray-600">Be prepared when it matters most. Both options include hands-on instruction with Coach Tasha and a light breakfast.</p>
+          <div className="mx-auto mt-8 flex justify-center"><img src="/coach-tashee-cpr.png" alt="Coach Tasha with a CPR training manikin" className="max-h-64 w-full max-w-sm object-contain" /></div>
           <div className="mx-auto mt-9 grid max-w-4xl gap-6 md:grid-cols-2">
             {[
               { name: "Child CPR/AED Skills Training", price: "$65", features: ["Hands-on Child CPR/AED instruction", "Light breakfast included", "No certification issued"] },
@@ -93,8 +93,8 @@ export default function AquaticTrainingSpaSite() {
 
         <section id="about" className="bg-[#F0FAFD] py-16">
           <div className="container mx-auto grid items-center gap-8 px-4 md:grid-cols-2">
-            <div className="flex justify-center"><img src="/coach-tashee.png" alt="Coach Tashee illustration" className="max-h-80 w-full max-w-sm object-contain" /></div>
-            <div><h2 className="text-3xl font-bold">About Coach Tashee</h2><p className="mt-3 font-semibold">LaTasha Parks | Founder, Aquatic Educator &amp; Entrepreneur</p><p className="mt-4 text-gray-700">For Coach Tashee, swimming is more than a skill. It's a lifelong passion with a purpose.</p><p className="mt-3 text-gray-700">Introduced to swimming at an early age through the National Youth Sports Program, LaTasha developed a love for the water that led her to competitive swimming in high school and, in 1999, to serving as a lifeguard with the very program that helped shape her journey.</p><p className="mt-3 text-gray-700">Having experienced the devastating impact of drowning within her community, she developed a deep commitment to teaching others how to swim and helping families understand the importance of water safety.</p><p className="mt-3 text-gray-700">As an aquatic educator and entrepreneur, LaTasha is passionate about creating innovative educational resources that teach water safety beyond the swimming pool.</p><p className="mt-3 text-gray-700">Through Aquatic 4 Life, Coach Tashee is dedicated to building confidence, teaching essential life-saving skills, and empowering individuals and families to be safer in and around water.</p><p className="mt-4 font-semibold" style={{ color: "#01A5E2" }}>Training our way through life.</p></div>
+            <div className="flex justify-center"><img src="/coach-tashee.png" alt="Coach Tasha illustration" className="max-h-80 w-full max-w-sm object-contain" /></div>
+            <div><h2 className="text-3xl font-bold">About Coach Tasha</h2><p className="mt-3 font-semibold">LaTasha Parks | Founder, Aquatic Educator &amp; Entrepreneur</p><p className="mt-4 text-gray-700">For Coach Tasha, swimming is more than a skill. It's a lifelong passion with a purpose.</p><p className="mt-3 text-gray-700">Introduced to swimming at an early age through the National Youth Sports Program, LaTasha developed a love for the water that led her to competitive swimming in high school and, in 1999, to serving as a lifeguard with the very program that helped shape her journey.</p><p className="mt-3 text-gray-700">Having experienced the devastating impact of drowning within her community, she developed a deep commitment to teaching others how to swim and helping families understand the importance of water safety.</p><p className="mt-3 text-gray-700">As an aquatic educator and entrepreneur, LaTasha is passionate about creating innovative educational resources that teach water safety beyond the swimming pool.</p><p className="mt-3 text-gray-700">Through Aquatic 4 Life, Coach Tasha is dedicated to building confidence, teaching essential life-saving skills, and empowering individuals and families to be safer in and around water.</p><p className="mt-4 font-semibold" style={{ color: "#01A5E2" }}>Training our way through life.</p></div>
           </div>
         </section>
 
